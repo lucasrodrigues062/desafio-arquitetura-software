@@ -2,6 +2,7 @@
 # Solução
 
 Aluno: Lucas Rodrigues
+Github do Projeto: https://github.com/lucasrodrigues062/desafio-arquitetura-software
 
 ## Entidades
     
