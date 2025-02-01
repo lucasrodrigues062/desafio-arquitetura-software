@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="C4 Model">
+    <mxGraphModel dx="1850" dy="1210" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <!-- Context Level -->
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="user" value="Usuário" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="110" width="60" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="system" value="Customer Management System" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="200" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="db" value="Database" style="shape=cylinder;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="110" width="100" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow1" edge="1" source="user" target="system" style="edgeStyle=orthogonalEdgeStyle;" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow2" edge="1" source="system" target="db" style="edgeStyle=orthogonalEdgeStyle;" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Container Level -->
+        <mxCell id="api" value="API (FastAPI)" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="300" width="200" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="dbContainer" value="SQLite Database" style="shape=cylinder;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="300" width="100" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow3" edge="1" source="api" target="dbContainer" style="edgeStyle=orthogonalEdgeStyle;" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Component Level -->
+        <mxCell id="controller" value="Controller" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="500" width="150" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="service" value="Service" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="500" width="150" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="model" value="Model" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="500" width="150" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow4" edge="1" source="controller" target="service" style="edgeStyle=orthogonalEdgeStyle;" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="arrow5" edge="1" source="service" target="model" style="edgeStyle=orthogonalEdgeStyle;" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

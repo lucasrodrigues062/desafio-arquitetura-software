@@ -15,11 +15,11 @@ def update(customer_id: int, customer: CustomerUpdate):
 
 
 @customer_router.get('/api/v1/customers/{customer_id}', tags=["customer"],  status_code=status.HTTP_200_OK, include_in_schema=True, response_model=CustomerView)
-def update(customer_id: int):
+def get_by_id(customer_id: int):
     return get_customer_by_id(customer_id)
 
 @customer_router.get('/api/v1/customers', tags=["customer"],  status_code=status.HTTP_200_OK, include_in_schema=True, response_model=list[CustomerView])
-def update(name: str | None = None):
+def get(name: str | None = None):
     if name is not None:
         return get_customer_by_name(name)
     return get_customers()
@@ -27,3 +27,7 @@ def update(name: str | None = None):
 @customer_router.get('/api/v1/count/customers', tags=["customer"],  status_code=status.HTTP_200_OK, include_in_schema=True, response_model=CustomerCount )
 def count():
     return count_customers()
+
+@customer_router.delete('/api/v1/customers/{customer_id}', tags=["customer"],  status_code=status.HTTP_200_OK, include_in_schema=True )
+def delete(customer_id: int):
+    return delete_customer(customer_id)

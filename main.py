@@ -9,3 +9,4 @@ app = FastAPI()
 def on_startup():
     create_db_and_tables()
 app.include_router(customer_router)
+
