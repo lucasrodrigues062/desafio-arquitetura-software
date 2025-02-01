@@ -1,0 +1,7 @@
+fastapi~=0.115.8
+uvicorn~=0.23.2
+pydantic~=2.10.6
+SQLAlchemy~=2.0.37
+email-validator
+db-sqlite3
+sqlmodel~=0.0.22
