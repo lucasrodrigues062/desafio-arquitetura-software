@@ -161,7 +161,7 @@ Escolhido a linguagem Python com o "framework" FastApi. A decisão aqui foi some
 
 Foi utilizado o padrão MVC (Model View Control) em quase a sua totalidade, visto que não temos nada para "mostrar" ao consumidor da API então as respostas ficaram diretamente na camada "Controller"
 
-![Estrutura de pastas](https://github.com/lucasrodrigues062/desafio-arquitetura-software/docs/img/estrutura-de-pastas.jpg)
+![Estrutura de pastas](https://github.com/lucasrodrigues062/desafio-arquitetura-software/blob/main/docs/img/estrutura-de-pastas.jpg)
 
 1. root - raíz do monorepo
    1. model - camada de domínio. Contém regras de negócio da aplicação.
