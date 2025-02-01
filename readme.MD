@@ -21,7 +21,7 @@ Deverão ser disponibilizadas seguindo padrão RESTful com combinação de verbo
 
 ### Endpoints
 
-Caso prefira pode baixar o arquivo de especificação OpenApi [Aqui](https://github.com/lucasrodrigues062/desafio-arquitetura-software/docs/OpenApi.json)
+Caso prefira pode baixar o arquivo de especificação OpenApi [Aqui](https://github.com/lucasrodrigues062/desafio-arquitetura-software/blob/main/docs/OpenApi.json)
 
 #### POST /api/v1/customers - Criação de Cliente
 
@@ -274,10 +274,10 @@ def delete_customer(customer_id: int):
 
 ### C4 Model
 
-Caso prefira o arquivo draw.io ele pode ser baixado [aqui](https://github.com/lucasrodrigues062/desafio-arquitetura-software/docs/c4model.xml)
+Caso prefira o arquivo draw.io ele pode ser baixado [aqui](https://github.com/lucasrodrigues062/desafio-arquitetura-software/blob/main/docs/c4model.xml)
 
 Nível 1
-![C4 de Nível 1](https://github.com/lucasrodrigues062/desafio-arquitetura-software/docs/c4/c4-1.jpg)
+![C4 de Nível 1](https://github.com/lucasrodrigues062/desafio-arquitetura-software/blob/main/docs/c4/c4-1.jpg)
 
-Nível 2
-![C4 de Nível 2](https://github.com/lucasrodrigues062/desafio-arquitetura-software/docs/c4/c4-2.jpg)
+Nível 3
+![C4 de Nível 3](https://github.com/lucasrodrigues062/desafio-arquitetura-software/blob/main/docs/c4/c4-3.jpg)
